@@ -1,0 +1,132 @@
+/* Genel Stiller */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #E6C200  ;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.nav_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* BAŞLIK */
+.title {
+    font-size: 28px;
+    color: #d4af37;
+    margin-top: 20px;
+}
+
+/* MENÜ KONTEYNER */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* MENÜ KARTLARI */
+.menu {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu:hover {
+    transform: translateY(-5px);
+}
+
+/* RESİM GRUPLARI */
+.image-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.image-group img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* MENÜ BAŞLIKLARI */
+.menu h2 {
+    color: #d4af37;
+    font-size: 22px;
+}
+
+/* MENÜ AÇIKLAMALARI */
+.menu p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* FİYAT */
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b8860b;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE TASARIM */
+@media (max-width: 768px) {
+    .nav_main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 90%;
+    }
+    .brand-name{
+        font-size: 18px;
+    }
+    nav{
+        padding: 5px;
+    }
+    .nav_main{
+        gap: 0px;
+    }
+}
